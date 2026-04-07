@@ -12,6 +12,7 @@
       --pink: #ff5fa2;
       --yellow: #ffd84d;
       --sky: #77c8ff;
+      --purple: #7c3aed;
       --max: 760px;
     }
 
@@ -56,9 +57,16 @@
 
     .photo-row {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 10px;
       margin: 18px 0;
+    }
+
+    .photo-row img {
+      width: 100%;
+      aspect-ratio: 0.9 / 1;
+      object-fit: cover;
+      border-radius: 22px;
     }
 
     .photo-placeholder {
@@ -85,14 +93,30 @@
       padding: 16px;
       border-radius: 16px;
       font-weight: 900;
-      background: var(--text);
+      background: var(--purple);
       color: white;
       margin-top: 8px;
+      width: fit-content;
+      min-width: 220px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .blurb, .offer, .service-area, .contact {
       font-size: 17px;
       line-height: 1.7;
+    }
+
+    .offer {
+      margin-bottom: 6px;
+    }
+
+    .tight-section {
+      padding-top: 10px;
+    }
+
+    .name-highlight {
+      color: var(--purple);
     }
 
     .accent-line {
@@ -144,13 +168,17 @@
     <section class="section">
       <div class="top-note">🐶 Dog walking in Brooklyn</div>
 
-      <h1>I’m Anjali.<br />The Brooklyn dog walker you’ve always wanted.<br />Reliable, calm, and fun.</h1>
+      <h1>I’m <span class="name-highlight">Anjali.</span> The Brooklyn dog walker you’ve always wanted.<br />Reliable, calm, and fun.</h1>
 
       <p class="offer">
-        First walk: $30 for one hour — use code <span class="code">CANINEMAGICIAN</span>
+        First walk: $30 for one hour — text me with the code <span class="code">CANINEMAGICIAN</span>
       </p>
 
       
+
+      <a class="btn" href="sms:+13239019247?body=Hi Anjali! I found your dog walking page and wanted to ask about availability.">
+        Text Anjali
+      </a>
 
       <div class="review-list" style="margin:18px 0;">
         <div class="review-card">
@@ -161,21 +189,15 @@
           <em>“Anjali was wonderful! Super communicative and able to help me out on short notice. Hoping to book her again sometime soon.”</em>
           <div class="review-meta">— Neelam S, Feb 17</div>
         </div>
-        <p class="blurb" style="margin-top:8px; display:flex; align-items:center; gap:8px;">
-          <img src="rover.png" alt="Rover logo" style="width:22px; height:22px; border-radius:6px;" />
+        <p class="blurb" style="margin-top:8px;">
           <a href="https://www.rover.com/sit/anjalk10427" target="_blank" style="text-decoration: underline; font-weight:600;">See more reviews on Rover</a>
         </p>
       </div>
 
       <div class="photo-row">
-        <div class="photo-placeholder ph1">Add photo of Anjali with a dog</div>
-        <div class="photo-placeholder ph2">Add walking photo here</div>
-        <div class="photo-placeholder ph3">Add happy dog photo here</div>
+        <img src="anju1.jpeg" alt="Anjali with a dog" />
+        <img src="anju2.jpeg" alt="Anjali dog walking in Brooklyn" />
       </div>
-
-      <a class="btn" href="sms:+11234567890?body=Hi Anjali! I found your dog walking page and wanted to ask about availability.">
-        Text Anjali
-      </a>
     </section>
 
     <section class="section">
@@ -186,13 +208,12 @@
         I’m Anjali. I grew up in Mumbai and moved to Brooklyn from LA last year. I’m an experienced dog walker and am currently freelancing, which gives me flexibility and time to really show up for the dogs I work with.
       </p>
 
-      <p class="blurb" style="margin-top: 14px;">
+      <p class="blurb" style="margin-top: 10px;">
         I’ve grown up with dogs my whole life, and at one point helped care for four golden retrievers at once, so I’m very comfortable with playful energy, big personalities, and dogs who want a walker that is both calm and upbeat.
       </p>
     </section>
 
-    <section class="section">
-      <section class="section">
+    <section class="section tight-section">
       <h2>What I can help with</h2>
       <div class="accent-line"></div>
 
@@ -212,7 +233,7 @@
         Text is best for booking and quick questions.
       </p>
 
-      <a class="btn" href="sms:+11234567890?body=Hi Anjali! I found your dog walking page and wanted to book a walk.">
+      <a class="btn" href="sms:+13239019247?body=Hi Anjali! I found your dog walking page and wanted to book a walk.">
         Text Anjali
       </a>
     </section>
