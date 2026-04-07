@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anjali | Brooklyn Dog Walker</title>
+  <meta name="description" content="Friendly, reliable dog walking in Brooklyn with Anjali." />
+  <style>
+    :root {
+      --bg: #fffaf3;
+      --text: #1f2937;
+      --pink: #ff5fa2;
+      --yellow: #ffd84d;
+      --sky: #77c8ff;
+      --max: 760px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255, 95, 162, 0.18), transparent 30%),
+        radial-gradient(circle at top right, rgba(119, 200, 255, 0.2), transparent 32%),
+        linear-gradient(180deg, #fff9ef 0%, #fffef8 100%);
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    .wrap {
+      width: min(calc(100% - 28px), var(--max));
+      margin: 0 auto;
+      padding: 20px 0 56px;
+    }
+
+    .top-note {
+      display: inline-block;
+      background: rgba(255,255,255,0.8);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    h1 { font-size: clamp(40px, 10vw, 64px); line-height: 0.92; margin-bottom: 14px; }
+    h2 { font-size: 28px; margin-bottom: 14px; }
+
+    .lead { font-size: 18px; line-height: 1.55; max-width: 34ch; }
+
+    .section { padding: 20px 0; }
+
+    .photo-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 18px 0;
+    }
+
+    .photo-placeholder {
+      aspect-ratio: 0.9 / 1;
+      border-radius: 22px;
+      border: 2px dashed rgba(31, 41, 55, 0.14);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      font-weight: 800;
+    }
+
+    .ph1 { background: #fff1a8; }
+    .ph2 { background: #c9f0ff; }
+    .ph3 { background: #ffd2e7; }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      padding: 16px;
+      border-radius: 16px;
+      font-weight: 900;
+      background: var(--text);
+      color: white;
+      margin-top: 8px;
+    }
+
+    .blurb, .offer, .service-area, .contact {
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .accent-line {
+      width: 88px;
+      height: 8px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--pink), var(--yellow), var(--sky));
+      margin: 8px 0 18px;
+    }
+
+    .code {
+      display: inline-block;
+      background: #fff1cb;
+      padding: 6px 10px;
+      border-radius: 12px;
+      font-weight: 900;
+      margin-top: 6px;
+    }
+
+    .review-list { display: grid; gap: 10px; }
+
+    .review-card {
+      background: rgba(255,255,255,0.9);
+      border-radius: 18px;
+      padding: 14px 16px;
+      border: 2px solid rgba(31,41,55,0.06);
+    }
+
+    .review-card em {
+      display: block;
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    .review-meta {
+      margin-top: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      color: #4b5563;
+    }
+
+    .footer { padding-top: 24px; font-size: 13px; color: #6b7280; }
+
+  </style>
+</head>
+<body>
+  <main class="wrap">
+
+    <section class="section">
+      <div class="top-note">🐶 Dog walking in Brooklyn</div>
+
+      <h1>I’m Anjali.<br />The Brooklyn dog walker you’ve always wanted.<br />Reliable, calm, and fun.</h1>
+
+      <p class="offer">
+        First walk: $30 for one hour — use code <span class="code">CANINEMAGICIAN</span>
+      </p>
+
+      
+
+      <div class="review-list" style="margin:18px 0;">
+        <div class="review-card">
+          <em>“Anjali was great with Eli on his weekly walks! She was very communicative and sent updates regularly!”</em>
+          <div class="review-meta">— Stephanie M, Aug 26</div>
+        </div>
+        <div class="review-card">
+          <em>“Anjali was wonderful! Super communicative and able to help me out on short notice. Hoping to book her again sometime soon.”</em>
+          <div class="review-meta">— Neelam S, Feb 17</div>
+        </div>
+        <p class="blurb" style="margin-top:8px; display:flex; align-items:center; gap:8px;">
+          <img src="rover.png" alt="Rover logo" style="width:22px; height:22px; border-radius:6px;" />
+          <a href="https://www.rover.com/sit/anjalk10427" target="_blank" style="text-decoration: underline; font-weight:600;">See more reviews on Rover</a>
+        </p>
+      </div>
+
+      <div class="photo-row">
+        <div class="photo-placeholder ph1">Add photo of Anjali with a dog</div>
+        <div class="photo-placeholder ph2">Add walking photo here</div>
+        <div class="photo-placeholder ph3">Add happy dog photo here</div>
+      </div>
+
+      <a class="btn" href="sms:+11234567890?body=Hi Anjali! I found your dog walking page and wanted to ask about availability.">
+        Text Anjali
+      </a>
+    </section>
+
+    <section class="section">
+      <h2>About</h2>
+      <div class="accent-line"></div>
+
+      <p class="blurb">
+        I’m Anjali. I grew up in Mumbai and moved to Brooklyn from LA last year. I’m an experienced dog walker and am currently freelancing, which gives me flexibility and time to really show up for the dogs I work with.
+      </p>
+
+      <p class="blurb" style="margin-top: 14px;">
+        I’ve grown up with dogs my whole life, and at one point helped care for four golden retrievers at once, so I’m very comfortable with playful energy, big personalities, and dogs who want a walker that is both calm and upbeat.
+      </p>
+    </section>
+
+    <section class="section">
+      <section class="section">
+      <h2>What I can help with</h2>
+      <div class="accent-line"></div>
+
+      <p class="blurb">• 30 min dog walks</p>
+      <p class="blurb">• 60 min dog walks</p>
+      <p class="blurb">• Dog sitting</p>
+      <p class="blurb">• Overnight stays</p>
+    </section>
+
+    
+
+    <section class="section">
+      <h2>Get in touch</h2>
+      <div class="accent-line"></div>
+
+      <p class="contact">
+        Text is best for booking and quick questions.
+      </p>
+
+      <a class="btn" href="sms:+11234567890?body=Hi Anjali! I found your dog walking page and wanted to book a walk.">
+        Text Anjali
+      </a>
+    </section>
+
+    <p class="footer">Made with 💛 in Brooklyn</p>
+
+  </main>
+</body>
+</html>
